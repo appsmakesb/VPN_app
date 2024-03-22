@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Value from default config. -->
+    <string name="api_key" translatable="false">bbydRmaPTr08BSCHsGxV1jIKp5uLzEbXWMi34JvAolFZwqD</string>
+    <!-- Value from default config. -->
+    <string name="api_url" translatable="false">https://pro.appstudiobd.com</string>
+    <!-- Value from default config. -->
+    <string name="halfyear" translatable="false">halfyear</string>
+    <!-- Value from default config. -->
+    <string name="lblHalfYearly" translatable="false">Half Yearly</string>
+    <!-- Value from default config. -->
+    <string name="lblMonthly" translatable="false">Monthly</string>
+    <!-- Value from default config. -->
+    <string name="lblQuarterly" translatable="false">Quarterly</string>
+    <!-- Value from default config. -->
+    <string name="lblYearly" translatable="false">Yearly</string>
+    <!-- Value from default config. -->
+    <string name="onemonth" translatable="false">onemonth</string>
+    <!-- Value from default config. -->
+    <string name="oneyear" translatable="false">oneyear</string>
+    <!-- Value from default config. -->
+    <string name="quarter" translatable="false">quarter</string>
+
+</resources>

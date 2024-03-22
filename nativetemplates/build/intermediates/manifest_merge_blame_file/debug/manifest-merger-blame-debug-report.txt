@@ -1,0 +1,16 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.android.ads.nativetemplates" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\nativetemplates\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="31" />
+7-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\nativetemplates\src\main\AndroidManifest.xml
+8
+9    <application android:supportsRtl="true" >
+9-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\nativetemplates\src\main\AndroidManifest.xml:3:3-5:17
+9-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\nativetemplates\src\main\AndroidManifest.xml:3:16-42
+10    </application>
+11
+12</manifest>

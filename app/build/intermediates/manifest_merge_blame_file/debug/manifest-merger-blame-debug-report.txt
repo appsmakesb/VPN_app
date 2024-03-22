@@ -1,0 +1,713 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bytesbee.provpnapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:6:5-66
+11-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:6:22-63
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:7:5-79
+12-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:8:5-76
+13-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:8:22-73
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:9:5-67
+14-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:9:22-64
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:10:5-80
+15-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:10:22-77
+16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+16-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:11:5-81
+16-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:11:22-78
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+17-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:12:5-77
+17-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:12:22-74
+18    <!-- <uses-permission android:name="com.google.android.gms.permission.AD_ID" /> -->
+19
+20    <queries>
+20-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:15:5-19:15
+21        <intent>
+21-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:16:9-18:18
+22            <action android:name="android.intent.action.MAIN" />
+22-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:17:13-65
+22-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:17:21-62
+23        </intent>
+24        <!-- For browser content -->
+25        <intent>
+25-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:31:9-37:18
+26            <action android:name="android.intent.action.VIEW" />
+26-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:32:13-65
+26-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:32:21-62
+27
+28            <category android:name="android.intent.category.BROWSABLE" />
+28-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:34:13-74
+28-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:34:23-71
+29
+30            <data android:scheme="https" />
+30-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:36:13-44
+30-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:36:19-41
+31        </intent> <!-- End of browser content -->
+32        <!-- For CustomTabsService -->
+33        <intent>
+33-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:40:9-42:18
+34            <action android:name="android.support.customtabs.action.CustomTabsService" />
+34-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:41:13-90
+34-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:41:21-87
+35        </intent>
+36    </queries>
+37
+38    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+38-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:26:5-77
+38-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:26:22-74
+39    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+39-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:27:5-68
+39-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:27:22-65
+40    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+40-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:29:5-82
+40-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:29:22-79
+41    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+41-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:26:5-110
+41-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:26:22-107
+42    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+42-->[com.google.android.gms:play-services-measurement-impl:21.1.1] C:\Users\user\.gradle\caches\transforms-3\2822b8f6fb96950a87df3b904c646410\transformed\jetified-play-services-measurement-impl-21.1.1\AndroidManifest.xml:27:5-79
+42-->[com.google.android.gms:play-services-measurement-impl:21.1.1] C:\Users\user\.gradle\caches\transforms-3\2822b8f6fb96950a87df3b904c646410\transformed\jetified-play-services-measurement-impl-21.1.1\AndroidManifest.xml:27:22-76
+43    <uses-permission android:name="com.android.vending.BILLING" />
+43-->[com.android.billingclient:billing:5.0.0] C:\Users\user\.gradle\caches\transforms-3\bfb64138ab2ac1851ce4cf33bd8109f7\transformed\jetified-billing-5.0.0\AndroidManifest.xml:10:5-67
+43-->[com.android.billingclient:billing:5.0.0] C:\Users\user\.gradle\caches\transforms-3\bfb64138ab2ac1851ce4cf33bd8109f7\transformed\jetified-billing-5.0.0\AndroidManifest.xml:10:22-64
+44
+45    <application
+45-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:21:5-141:19
+46        android:name="com.bytesbee.provpnapp.activity.UIApplication"
+46-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:22:9-47
+47        android:allowBackup="true"
+47-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:23:9-35
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.7.0] C:\Users\user\.gradle\caches\transforms-3\a668dc7bb17e6199bfb19556914242a3\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+49        android:debuggable="true"
+50        android:extractNativeLibs="true"
+50-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:24:9-41
+51        android:hardwareAccelerated="true"
+51-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:25:9-43
+52        android:icon="@mipmap/ic_launcher"
+52-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:26:9-43
+53        android:label="@string/app_name"
+53-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:27:9-41
+54        android:networkSecurityConfig="@xml/network_security_config"
+54-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:28:9-69
+55        android:requestLegacyExternalStorage="true"
+55-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:29:9-52
+56        android:roundIcon="@mipmap/ic_launcher"
+56-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:30:9-48
+57        android:supportsRtl="true"
+57-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:31:9-35
+58        android:testOnly="true"
+59        android:theme="@style/Theme.VPNApp"
+59-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:32:9-44
+60        android:usesCleartextTraffic="true" >
+60-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:33:9-44
+61        <meta-data
+61-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:36:9-38:54
+62            android:name="com.google.android.gms.ads.APPLICATION_ID"
+62-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:37:13-69
+63            android:value="@string/main_ad_app_id" />
+63-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:38:13-51
+64
+65        <activity
+65-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:40:9-50:20
+66            android:name="com.bytesbee.provpnapp.activity.SplashActivity"
+66-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:41:13-52
+67            android:exported="true"
+67-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:42:13-36
+68            android:hardwareAccelerated="true"
+68-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:43:13-47
+69            android:screenOrientation="portrait" >
+69-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:44:13-49
+70            <intent-filter>
+70-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:45:13-49:29
+71                <action android:name="android.intent.action.MAIN" />
+71-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:17:13-65
+71-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:17:21-62
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:48:17-77
+73-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:48:27-74
+74            </intent-filter>
+75        </activity>
+76        <activity
+76-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:52:9-55:52
+77            android:name="com.bytesbee.provpnapp.activity.HomeActivity"
+77-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:53:13-50
+78            android:exported="false"
+78-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:54:13-37
+79            android:screenOrientation="portrait" />
+79-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:55:13-49
+80        <activity
+80-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:57:9-60:52
+81            android:name="com.bytesbee.provpnapp.activity.OnBoardingActivity"
+81-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:58:13-56
+82            android:exported="false"
+82-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:59:13-37
+83            android:screenOrientation="portrait" />
+83-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:60:13-49
+84        <activity
+84-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:62:9-65:52
+85            android:name="com.bytesbee.provpnapp.activity.UsageActivity"
+85-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:63:13-51
+86            android:exported="false"
+86-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:64:13-37
+87            android:screenOrientation="portrait" />
+87-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:65:13-49
+88        <activity
+88-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:67:9-70:52
+89            android:name="com.bytesbee.provpnapp.activity.SelectServersActivity"
+89-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:68:13-59
+90            android:exported="false"
+90-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:69:13-37
+91            android:screenOrientation="portrait" />
+91-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:70:13-49
+92        <activity
+92-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:72:9-74:40
+93            android:name="com.bytesbee.provpnapp.activity.SpeedTestActivity"
+93-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:73:13-55
+94            android:exported="false" />
+94-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:74:13-37
+95        <activity
+95-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:76:9-78:40
+96            android:name="com.bytesbee.provpnapp.activity.ConnectionHistoryActivity"
+96-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:77:13-63
+97            android:exported="false" />
+97-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:78:13-37
+98        <activity
+98-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:80:9-82:40
+99            android:name="com.bytesbee.provpnapp.activity.SpeedTestHistoryActivity"
+99-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:81:13-62
+100            android:exported="false" />
+100-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:82:13-37
+101        <activity
+101-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:84:9-86:40
+102            android:name="com.bytesbee.provpnapp.activity.LogsActivity"
+102-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:85:13-50
+103            android:exported="false" />
+103-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:86:13-37
+104        <activity
+104-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:88:9-91:52
+105            android:name="com.bytesbee.provpnapp.activity.PrivacyPolicyActivity"
+105-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:89:13-59
+106            android:exported="false"
+106-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:90:13-37
+107            android:screenOrientation="portrait" />
+107-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:91:13-49
+108        <activity
+108-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:93:9-96:52
+109            android:name="com.bytesbee.provpnapp.activity.AboutUsActivity"
+109-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:94:13-53
+110            android:exported="false"
+110-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:95:13-37
+111            android:screenOrientation="portrait" />
+111-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:96:13-49
+112        <activity
+112-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:98:9-101:52
+113            android:name="com.bytesbee.provpnapp.activity.UpgradeActivity"
+113-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:99:13-53
+114            android:exported="false"
+114-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:100:13-37
+115            android:screenOrientation="portrait" />
+115-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:101:13-49
+116        <activity
+116-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:103:9-106:52
+117            android:name="com.bytesbee.provpnapp.activity.SettingsActivity"
+117-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:104:13-54
+118            android:exported="false"
+118-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:105:13-37
+119            android:screenOrientation="portrait" />
+119-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:106:13-49
+120        <activity
+120-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:108:9-113:52
+121            android:name="de.blinkt.openvpn.DisconnectVPNActivity"
+121-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:109:13-67
+122            android:excludeFromRecents="true"
+122-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:110:13-46
+123            android:noHistory="true"
+123-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:111:13-37
+124            android:taskAffinity=".DisconnectVPN"
+124-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:112:13-50
+125            android:theme="@style/blinkt.dialog" />
+125-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:113:13-49
+126
+127        <service
+127-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:115:9-122:19
+128            android:name="de.blinkt.openvpn.core.OpenVPNService"
+128-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:116:13-65
+129            android:exported="true"
+129-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:117:13-36
+130            android:permission="android.permission.BIND_VPN_SERVICE" >
+130-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:118:13-69
+131            <intent-filter>
+131-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:119:13-121:29
+132                <action android:name="android.net.VpnService" />
+132-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:120:17-65
+132-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:120:25-62
+133            </intent-filter>
+134        </service>
+135        <service
+135-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:124:9-130:19
+136            android:name="com.bytesbee.provpnapp.fcm.MyFirebaseMessagingService"
+136-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:125:13-59
+137            android:exported="false" >
+137-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:126:13-37
+138            <intent-filter>
+138-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:127:13-129:29
+139                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+139-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:128:17-78
+139-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:128:25-75
+140            </intent-filter>
+141        </service>
+142
+143        <receiver
+143-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:132:9-139:20
+144            android:name="de.blinkt.openvpn.OnBootReceiver"
+144-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:133:13-60
+145            android:exported="true" >
+145-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:134:13-36
+146            <intent-filter android:priority="999" >
+146-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:135:13-138:29
+146-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:135:28-50
+147                <action android:name="android.intent.action.BOOT_COMPLETED" />
+147-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:136:17-79
+147-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:136:25-76
+148                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+148-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:137:17-84
+148-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:137:25-81
+149            </intent-filter>
+150        </receiver>
+151        <receiver
+151-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:32:9-39:20
+152            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+152-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:33:13-78
+153            android:exported="true"
+153-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:34:13-36
+154            android:permission="com.google.android.c2dm.permission.SEND" >
+154-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:35:13-73
+155            <intent-filter>
+155-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:36:13-38:29
+156                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+156-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:37:17-81
+156-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:37:25-78
+157            </intent-filter>
+158        </receiver>
+159        <!--
+160             FirebaseMessagingService performs security checks at runtime,
+161             but set to not exported to explicitly avoid allowing another app to call it.
+162        -->
+163        <service
+163-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:45:9-52:19
+164            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+164-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:46:13-82
+165            android:directBootAware="true"
+165-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:47:13-43
+166            android:exported="false" >
+166-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:48:13-37
+167            <intent-filter android:priority="-500" >
+167-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:127:13-129:29
+168                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+168-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:128:17-78
+168-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:128:25-75
+169            </intent-filter>
+170        </service>
+171        <service
+171-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:53:9-59:19
+172            android:name="com.google.firebase.components.ComponentDiscoveryService"
+172-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:54:13-84
+173            android:directBootAware="true"
+173-->[com.google.firebase:firebase-common:20.1.2] C:\Users\user\.gradle\caches\transforms-3\6e82b12add9084066fd027786ae53000\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:35:13-43
+174            android:exported="false" >
+174-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:55:13-37
+175            <meta-data
+175-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:56:13-58:85
+176                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+176-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:57:17-119
+177                android:value="com.google.firebase.components.ComponentRegistrar" />
+177-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\user\.gradle\caches\transforms-3\e29ee95b2f3f273fd6e01d68534e912e\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:58:17-82
+178            <meta-data
+178-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\user\.gradle\caches\transforms-3\550f8e2452cca9e6d51b78416b1dd05e\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:31:13-33:85
+179                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+179-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\user\.gradle\caches\transforms-3\550f8e2452cca9e6d51b78416b1dd05e\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:32:17-139
+180                android:value="com.google.firebase.components.ComponentRegistrar" />
+180-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\user\.gradle\caches\transforms-3\550f8e2452cca9e6d51b78416b1dd05e\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:33:17-82
+181            <meta-data
+181-->[com.google.firebase:firebase-installations:17.0.2] C:\Users\user\.gradle\caches\transforms-3\9d71cbe117d928ab20c0eb573422ea47\transformed\jetified-firebase-installations-17.0.2\AndroidManifest.xml:18:13-20:85
+182                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+182-->[com.google.firebase:firebase-installations:17.0.2] C:\Users\user\.gradle\caches\transforms-3\9d71cbe117d928ab20c0eb573422ea47\transformed\jetified-firebase-installations-17.0.2\AndroidManifest.xml:19:17-127
+183                android:value="com.google.firebase.components.ComponentRegistrar" />
+183-->[com.google.firebase:firebase-installations:17.0.2] C:\Users\user\.gradle\caches\transforms-3\9d71cbe117d928ab20c0eb573422ea47\transformed\jetified-firebase-installations-17.0.2\AndroidManifest.xml:20:17-82
+184            <meta-data
+184-->[com.google.firebase:firebase-datatransport:18.1.6] C:\Users\user\.gradle\caches\transforms-3\483c8165e8aba535ee860d373ed62ec4\transformed\jetified-firebase-datatransport-18.1.6\AndroidManifest.xml:28:13-30:85
+185                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+185-->[com.google.firebase:firebase-datatransport:18.1.6] C:\Users\user\.gradle\caches\transforms-3\483c8165e8aba535ee860d373ed62ec4\transformed\jetified-firebase-datatransport-18.1.6\AndroidManifest.xml:29:17-115
+186                android:value="com.google.firebase.components.ComponentRegistrar" />
+186-->[com.google.firebase:firebase-datatransport:18.1.6] C:\Users\user\.gradle\caches\transforms-3\483c8165e8aba535ee860d373ed62ec4\transformed\jetified-firebase-datatransport-18.1.6\AndroidManifest.xml:30:17-82
+187        </service>
+188
+189        <receiver
+189-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:29:9-33:20
+190            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+190-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:30:13-85
+191            android:enabled="true"
+191-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:31:13-35
+192            android:exported="false" >
+192-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:32:13-37
+193        </receiver>
+194
+195        <service
+195-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:35:9-38:40
+196            android:name="com.google.android.gms.measurement.AppMeasurementService"
+196-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:36:13-84
+197            android:enabled="true"
+197-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:37:13-35
+198            android:exported="false" />
+198-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:38:13-37
+199        <service
+199-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:39:9-43:72
+200            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+200-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:40:13-87
+201            android:enabled="true"
+201-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:41:13-35
+202            android:exported="false"
+202-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:42:13-37
+203            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+203-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\user\.gradle\caches\transforms-3\f65e52a7c3d3b3055bdb6244aec30483\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:43:13-69
+204        <activity
+204-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:49:9-53:64
+205            android:name="com.google.android.gms.ads.AdActivity"
+205-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:50:13-65
+206            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+206-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:51:13-122
+207            android:exported="false"
+207-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:52:13-37
+208            android:theme="@android:style/Theme.Translucent" />
+208-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:53:13-61
+209
+210        <provider
+210-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:55:9-59:39
+211            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+211-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:56:13-76
+212            android:authorities="com.bytesbee.provpnapp.mobileadsinitprovider"
+212-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:57:13-73
+213            android:exported="false"
+213-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:58:13-37
+214            android:initOrder="100" />
+214-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:59:13-36
+215
+216        <service
+216-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:61:9-64:40
+217            android:name="com.google.android.gms.ads.AdService"
+217-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:62:13-64
+218            android:enabled="true"
+218-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:63:13-35
+219            android:exported="false" />
+219-->[com.google.android.gms:play-services-ads-lite:21.3.0] C:\Users\user\.gradle\caches\transforms-3\11d0c22e9aa474c68a56984ad876fe2b\transformed\jetified-play-services-ads-lite-21.3.0\AndroidManifest.xml:64:13-37
+220
+221        <provider
+221-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:31:9-39:20
+222            android:name="androidx.startup.InitializationProvider"
+222-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:32:13-67
+223            android:authorities="com.bytesbee.provpnapp.androidx-startup"
+223-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:33:13-68
+224            android:exported="false" >
+224-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:34:13-37
+225            <meta-data
+225-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+226                android:name="androidx.work.WorkManagerInitializer"
+226-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+227                android:value="androidx.startup" />
+227-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+228            <meta-data
+228-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\ad05a3001abfdb4ecbc74bee4e192844\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+229                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+229-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\ad05a3001abfdb4ecbc74bee4e192844\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+230                android:value="androidx.startup" />
+230-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\ad05a3001abfdb4ecbc74bee4e192844\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+231            <meta-data
+231-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-3\bfeafe7ef567e3c3bafc6cad8993c039\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+232                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+232-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-3\bfeafe7ef567e3c3bafc6cad8993c039\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+233                android:value="androidx.startup" />
+233-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-3\bfeafe7ef567e3c3bafc6cad8993c039\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+234        </provider>
+235
+236        <service
+236-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+237            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+237-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+238            android:directBootAware="false"
+238-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+239            android:enabled="@bool/enable_system_alarm_service_default"
+239-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+240            android:exported="false" />
+240-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+241        <service
+241-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+242            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+242-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+243            android:directBootAware="false"
+243-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+244            android:enabled="@bool/enable_system_job_service_default"
+244-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+245            android:exported="true"
+245-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+246            android:permission="android.permission.BIND_JOB_SERVICE" />
+246-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+247        <service
+247-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:54:9-59:35
+248            android:name="androidx.work.impl.foreground.SystemForegroundService"
+248-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:55:13-81
+249            android:directBootAware="false"
+249-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:56:13-44
+250            android:enabled="@bool/enable_system_foreground_service_default"
+250-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+251            android:exported="false" />
+251-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:58:13-37
+252
+253        <receiver
+253-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+254            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+254-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+255            android:directBootAware="false"
+255-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+256            android:enabled="true"
+256-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+257            android:exported="false" />
+257-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+258        <receiver
+258-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+259            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+259-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+260            android:directBootAware="false"
+260-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+261            android:enabled="false"
+261-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+262            android:exported="false" >
+262-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+263            <intent-filter>
+263-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+264                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+264-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+264-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+265                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+265-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+265-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+266            </intent-filter>
+267        </receiver>
+268        <receiver
+268-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+269            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+269-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+270            android:directBootAware="false"
+270-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+271            android:enabled="false"
+271-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+272            android:exported="false" >
+272-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+273            <intent-filter>
+273-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+274                <action android:name="android.intent.action.BATTERY_OKAY" />
+274-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+274-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+275                <action android:name="android.intent.action.BATTERY_LOW" />
+275-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+275-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+276            </intent-filter>
+277        </receiver>
+278        <receiver
+278-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+279            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+279-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+280            android:directBootAware="false"
+280-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+281            android:enabled="false"
+281-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+282            android:exported="false" >
+282-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+283            <intent-filter>
+283-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+284                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+284-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+284-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+285                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+285-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+285-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+286            </intent-filter>
+287        </receiver>
+288        <receiver
+288-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+289            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+289-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+290            android:directBootAware="false"
+290-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+291            android:enabled="false"
+291-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+292            android:exported="false" >
+292-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+293            <intent-filter>
+293-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
+294                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+294-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
+294-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
+295            </intent-filter>
+296        </receiver>
+297        <receiver
+297-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+298            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+298-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+299            android:directBootAware="false"
+299-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+300            android:enabled="false"
+300-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+301            android:exported="false" >
+301-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+302            <intent-filter>
+302-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+303                <action android:name="android.intent.action.BOOT_COMPLETED" />
+303-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:136:17-79
+303-->E:\Play Store\Marketplace app sell\MY Pro VPN\wp creator zone - pro vpn source code\wp creator zone - pro vpn source code\MainFiles\MyProVPNApp\MyProVPNApp\app\src\main\AndroidManifest.xml:136:25-76
+304                <action android:name="android.intent.action.TIME_SET" />
+304-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+304-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+305                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+305-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+305-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+306            </intent-filter>
+307        </receiver>
+308        <receiver
+308-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+309            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+309-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+310            android:directBootAware="false"
+310-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+311            android:enabled="@bool/enable_system_alarm_service_default"
+311-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+312            android:exported="false" >
+312-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+313            <intent-filter>
+313-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+314                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+314-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+314-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+315            </intent-filter>
+316        </receiver>
+317        <receiver
+317-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+318            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+318-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+319            android:directBootAware="false"
+319-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+320            android:enabled="true"
+320-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+321            android:exported="true"
+321-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+322            android:permission="android.permission.DUMP" >
+322-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+323            <intent-filter>
+323-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+324                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+324-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+324-->[androidx.work:work-runtime:2.7.1] C:\Users\user\.gradle\caches\transforms-3\39ab76afeadbc183507829616d81288d\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+325            </intent-filter>
+326        </receiver>
+327
+328        <meta-data
+328-->[com.android.billingclient:billing:5.0.0] C:\Users\user\.gradle\caches\transforms-3\bfb64138ab2ac1851ce4cf33bd8109f7\transformed\jetified-billing-5.0.0\AndroidManifest.xml:13:9-15:37
+329            android:name="com.google.android.play.billingclient.version"
+329-->[com.android.billingclient:billing:5.0.0] C:\Users\user\.gradle\caches\transforms-3\bfb64138ab2ac1851ce4cf33bd8109f7\transformed\jetified-billing-5.0.0\AndroidManifest.xml:14:13-73
+330            android:value="5.0.0" />
+330-->[com.android.billingclient:billing:5.0.0] C:\Users\user\.gradle\caches\transforms-3\bfb64138ab2ac1851ce4cf33bd8109f7\transformed\jetified-billing-5.0.0\AndroidManifest.xml:15:13-34
+331
+332        <activity
+332-->[com.android.billingclient:billing:5.0.0] C:\Users\user\.gradle\caches\transforms-3\bfb64138ab2ac1851ce4cf33bd8109f7\transformed\jetified-billing-5.0.0\AndroidManifest.xml:17:9-21:75
+333            android:name="com.android.billingclient.api.ProxyBillingActivity"
+333-->[com.android.billingclient:billing:5.0.0] C:\Users\user\.gradle\caches\transforms-3\bfb64138ab2ac1851ce4cf33bd8109f7\transformed\jetified-billing-5.0.0\AndroidManifest.xml:18:13-78
+334            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+334-->[com.android.billingclient:billing:5.0.0] C:\Users\user\.gradle\caches\transforms-3\bfb64138ab2ac1851ce4cf33bd8109f7\transformed\jetified-billing-5.0.0\AndroidManifest.xml:19:13-96
+335            android:exported="false"
+335-->[com.android.billingclient:billing:5.0.0] C:\Users\user\.gradle\caches\transforms-3\bfb64138ab2ac1851ce4cf33bd8109f7\transformed\jetified-billing-5.0.0\AndroidManifest.xml:20:13-37
+336            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+336-->[com.android.billingclient:billing:5.0.0] C:\Users\user\.gradle\caches\transforms-3\bfb64138ab2ac1851ce4cf33bd8109f7\transformed\jetified-billing-5.0.0\AndroidManifest.xml:21:13-72
+337        <activity
+337-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\c19280681d41f53f525002d7d5931c2e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+338            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+338-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\c19280681d41f53f525002d7d5931c2e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+339            android:exported="false"
+339-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\c19280681d41f53f525002d7d5931c2e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+340            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+340-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\c19280681d41f53f525002d7d5931c2e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+341
+342        <provider
+342-->[com.google.firebase:firebase-common:20.1.2] C:\Users\user\.gradle\caches\transforms-3\6e82b12add9084066fd027786ae53000\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:26:9-31:39
+343            android:name="com.google.firebase.provider.FirebaseInitProvider"
+343-->[com.google.firebase:firebase-common:20.1.2] C:\Users\user\.gradle\caches\transforms-3\6e82b12add9084066fd027786ae53000\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:27:13-77
+344            android:authorities="com.bytesbee.provpnapp.firebaseinitprovider"
+344-->[com.google.firebase:firebase-common:20.1.2] C:\Users\user\.gradle\caches\transforms-3\6e82b12add9084066fd027786ae53000\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:28:13-72
+345            android:directBootAware="true"
+345-->[com.google.firebase:firebase-common:20.1.2] C:\Users\user\.gradle\caches\transforms-3\6e82b12add9084066fd027786ae53000\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:29:13-43
+346            android:exported="false"
+346-->[com.google.firebase:firebase-common:20.1.2] C:\Users\user\.gradle\caches\transforms-3\6e82b12add9084066fd027786ae53000\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:30:13-37
+347            android:initOrder="100" />
+347-->[com.google.firebase:firebase-common:20.1.2] C:\Users\user\.gradle\caches\transforms-3\6e82b12add9084066fd027786ae53000\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:31:13-36
+348
+349        <meta-data
+349-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\user\.gradle\caches\transforms-3\23dca58a2df65b634d3a2c41467e9bac\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+350            android:name="com.google.android.gms.version"
+350-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\user\.gradle\caches\transforms-3\23dca58a2df65b634d3a2c41467e9bac\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+351            android:value="@integer/google_play_services_version" />
+351-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\user\.gradle\caches\transforms-3\23dca58a2df65b634d3a2c41467e9bac\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+352
+353        <service
+353-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\user\.gradle\caches\transforms-3\58629df1e77ec8801c41817f5a3942a1\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:29:9-35:19
+354            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+354-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\user\.gradle\caches\transforms-3\58629df1e77ec8801c41817f5a3942a1\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:30:13-103
+355            android:exported="false" >
+355-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\user\.gradle\caches\transforms-3\58629df1e77ec8801c41817f5a3942a1\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:31:13-37
+356            <meta-data
+356-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\user\.gradle\caches\transforms-3\58629df1e77ec8801c41817f5a3942a1\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:32:13-34:39
+357                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+357-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\user\.gradle\caches\transforms-3\58629df1e77ec8801c41817f5a3942a1\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:33:17-94
+358                android:value="cct" />
+358-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\user\.gradle\caches\transforms-3\58629df1e77ec8801c41817f5a3942a1\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:34:17-36
+359        </service>
+360        <service
+360-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\user\.gradle\caches\transforms-3\2890930edeebba99858481be24485f92\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:26:9-30:19
+361            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+361-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\user\.gradle\caches\transforms-3\2890930edeebba99858481be24485f92\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:27:13-117
+362            android:exported="false"
+362-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\user\.gradle\caches\transforms-3\2890930edeebba99858481be24485f92\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:28:13-37
+363            android:permission="android.permission.BIND_JOB_SERVICE" >
+363-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\user\.gradle\caches\transforms-3\2890930edeebba99858481be24485f92\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:29:13-69
+364        </service>
+365
+366        <receiver
+366-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\user\.gradle\caches\transforms-3\2890930edeebba99858481be24485f92\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:32:9-34:40
+367            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+367-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\user\.gradle\caches\transforms-3\2890930edeebba99858481be24485f92\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:33:13-132
+368            android:exported="false" />
+368-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\user\.gradle\caches\transforms-3\2890930edeebba99858481be24485f92\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:34:13-37
+369
+370        <service
+370-->[androidx.room:room-runtime:2.2.5] C:\Users\user\.gradle\caches\transforms-3\834ad12c32566c6269eb87a4aa15935d\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+371            android:name="androidx.room.MultiInstanceInvalidationService"
+371-->[androidx.room:room-runtime:2.2.5] C:\Users\user\.gradle\caches\transforms-3\834ad12c32566c6269eb87a4aa15935d\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+372            android:directBootAware="true"
+372-->[androidx.room:room-runtime:2.2.5] C:\Users\user\.gradle\caches\transforms-3\834ad12c32566c6269eb87a4aa15935d\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+373            android:exported="false" />
+373-->[androidx.room:room-runtime:2.2.5] C:\Users\user\.gradle\caches\transforms-3\834ad12c32566c6269eb87a4aa15935d\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+374    </application>
+375
+376</manifest>
