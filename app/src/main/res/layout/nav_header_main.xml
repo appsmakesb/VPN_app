@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/nav_images"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height1"
+        android:background="@drawable/nav_image"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitStart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height1"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/padding20"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imgProfilePic"
+            android:layout_width="@dimen/padding80"
+            android:layout_height="@dimen/padding80"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding5"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="start"
+            android:text="@string/app_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textSize16" />
+
+        <TextView
+            android:id="@+id/txtEmails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:gravity="start"
+            android:text="@string/lblWelcome"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textSize14" />
+
+    </LinearLayout>
+
+</RelativeLayout>

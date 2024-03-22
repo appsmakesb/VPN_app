@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">@string/APP_LABEL</string>
+    <string name="lblPoweredBy">Powered by: BytesBee</string>
+    <string name="lblVersion">Version %1$s</string>
+    <string name="lblWelcome">You\'re welcome to my app</string>
+
+    <string name="lblNotifcationTitle">BytesBee - %s</string>
+    <string name="main_ad_app_id">ca-app-pub-8676187581068146~3154011298</string>
+    <!-- OnBoarding -->
+    <string name="sliderTitle1">Browse Faster Internet</string>
+    <string name="sliderTitle2">Free and VIP Servers</string>
+    <string name="sliderTitle3">Best VPN Unlimited Service</string>
+    <string name="sliderDesc1">Browse faster internet Free server\nand Super Fast browser</string>
+    <string name="sliderDesc2">Your identity will be protected. Now let\'s browse, VIP and Free Servers</string>
+    <string name="sliderDesc3">One of the greatest virtual private network services is VPN Unlimited, which safeguards all data and enables anonymous web browsing.</string>
+
+    <string name="lblPrivacyPolicy">Privacy Policy</string>
+    <string name="lblAbout">About</string>
+    <string name="lblDarkMode">Dark Mode</string>
+    <string name="lblSpeedTest">Speed Test</string>
+    <string name="lblUsageHistory">Usage History</string>
+    <string name="lblLogs">Logs</string>
+    <string name="lblTime">Time</string>
+    <string name="lblStaticTime">00:00:00</string>
+    <string name="strDisconnect">Disconnect?</string>
+    <string name="lblDisconnect">Disconnect</string>
+    <string name="msgDisconnect">Would you prefer to terminate the current connection?</string>
+
+    <string name="strSelectServer">Select Server</string>
+    <string name="strFreeServer">Free</string>
+    <string name="strFasterServer">Premium</string>
+    <string name="strUSA1">United States 1</string>
+
+    <string name="msgNoInternetConnection">No internet connection!. Make sure that WI-FI or mobile data is turned on,and try again!</string>
+    <string name="msgConnected">Connected successfully!</string>
+    <string name="msgTapStart"><b>To begin, tap the button. :)</b></string>
+    <string name="msgWaiting">Connecting to %1$s</string>
+    <string name="msgObtainingServer">Obtaining the server configuration</string>
+    <string name="msgAuthFailed">Failed to authorize. Try again!</string>
+    <string name="msgReconnection">Trying to reconnect…</string>
+    <string name="msgNoConnection">No Internet connection</string>
+    <string name="msgPermissionDenied">You have denied Permission.kindly give permission for internet connection to connect to VPN</string>
+    <string name="lblStaticSpeed">0.00 kB</string>
+
+    <string name="lblPing">Ping</string>
+    <string name="lblDownload">Download</string>
+    <string name="lblUpload">Upload</string>
+    <string name="press_again_to_exit">To terminate the application, press once more.</string>
+
+    <string name="lblUsage">Usage</string>
+    <string name="lblDataUsage">Data usage</string>
+    <string name="lblToday">Today</string>
+    <string name="lblNA">NA</string>
+    <string name="lblUsed">Used</string>
+    <string name="lblYesterday">Yesterday</string>
+    <string name="lblJanuary2019">1-January-2019</string>
+    <string name="lblThisWeek">This week</string>
+    <string name="lblThisMonth">This month</string>
+    <string name="lblTimeUsage">Time usage</string>
+    <string name="lblHHMMSS">HH : MM : SS</string>
+    <string name="lblTotal">Total</string>
+    <string name="lblNumberOfConnections">Number of Connections</string>
+    <string name="lblConnections">Connections</string>
+    <string name="lbl20">20</string>
+    <string name="lblUsageDesc">The usage data is stored in your mobile phone. By selecting the delete option, you can remove them at any moment.</string>
+    <string name="lblAppInstalled">App installed %1$s</string>
+    <string name="lblAppVersion">App version %1$s</string>
+    <string name="lblOneKB">1KB</string>
+    <string name="lblFormatKB">%1$dKB</string>
+    <string name="lblFormatMB">%1$dMB</string>
+
+    <string name="lblDeleteTitle">Delete</string>
+    <string name="msgDelete">Would you prefer the usage history deleted completely?</string>
+    <string name="msgClearLogs">Would you like to clear the all logs?</string>
+    <string name="lblYes">Yes</string>
+    <string name="lblNo">No</string>
+
+    <string name="lblNoConnection">No connection</string>
+    <string name="lblTapToRetry">Tap to retry</string>
+    <string name="lbNoInternetConnection">No Internet Connection</string>
+    <string name="lblRetry">Retry</string>
+    <string name="lblNoResult">No result</string>
+    <string name="lblNoPostFound">Oops, no server found!</string>
+    <string name="lblNoInternet">No Internet Connection!</string>
+
+    <string name="lblChooseServer">Choose Server</string>
+
+    <!-- Upgrade VIP -->
+<!--    <string name="lblMonthly">Monthly</string>-->
+<!--    <string name="lblQuarterly">Quarterly</string>-->
+<!--    <string name="lblHalfYearly">Half Yearly</string>-->
+<!--    <string name="lblYearly">Yearly</string>-->
+    <string name="lblVIPFeatureTitle">VIP - Specific features:</string>
+    <string name="lblVIPFeatures">- Ad free\n- 24/7 support\n- No speed limit\n- Premium Servers</string>
+    <string name="lblUpgradeToVIP">Upgrade to VIP</string>
+
+    <string name="strNavOpen">Open</string>
+    <string name="strNavClose">Close</string>
+
+    <!-- Setting -->
+    <string name="lblProfile">Profile</string>
+    <string name="lblNotification">Notification</string>
+    <string name="lblRTL">RTL (Right to Left)</string>
+    <string name="lblRateApp">Rate App</string>
+    <string name="lblShareApp">Share App</string>
+    <string name="lblSettings">Settings</string>
+    <string name="lblGeneral">General</string>
+    <string name="lblSettingVersion">App version %1$s</string>
+
+    <string name="lblRefresh">Refresh</string>
+    <string name="msgRefreshMessage">The app will automatically restart to reflect the updated changes.</string>
+    <string name="lblOK">OK</string>
+
+    <string name="msgShareTitle">@string/app_name</string>
+    <string name="msgShareContent">Please allow me to introduce you to the Amazing App. From the Google Play Store, you can quickly get this app.</string>
+
+    <!-- About Us -->
+    <string name="lblVersions">Version</string>
+    <string name="lblCompany">Company</string>
+    <string name="lblEmail">Email</string>
+    <string name="lblWebsite">Website</string>
+    <string name="lblContact">Contact</string>
+    <string name="lblServer">SERVER</string>
+    <string name="lblDash">- - -</string>
+    <string name="lblPingCap">PING</string>
+    <string name="lblDownloadCap">DOWNLOAD</string>
+    <string name="lblUploadCap">UPLOAD</string>
+    <string name="lbl0ms">0 ms</string>
+    <string name="lblLocation">LOCATION</string>
+    <string name="strMS">MS</string>
+    <string name="lblValue200">200</string>
+    <string name="lblUp12_45">12.45</string>
+    <string name="lblMBS">MBS</string>
+    <string name="lblDW123_25">123.25</string>
+    <string name="lblHistory">History</string>
+    <string name="lblConnHistory">Connection History</string>
+    <string name="lblDateFormat">MM/dd/yyyy HH:mm</string>
+    <string name="msgChooseBestServer">Kindly choose the best server.</string>
+    <string name="lblDate">Date</string>
+    <string name="lblFormatDate">(mm/dd/yyyy hh:mm)</string>
+    <string name="lblLocationSm">Location</string>
+    <string name="lblCountry">(country)</string>
+    <string name="lblTimeFormat">(hh:mm:ss)</string>
+    <string name="lblMbps">(Mbps)</string>
+    <string name="lblMs">(ms)</string>
+    <string name="lblSubscription">Subscription</string>
+    <string name="msgSubscriptionPost"><![CDATA[There is no subscription product. Please include in the play store -> Monetize -> Products -> Subscription]]></string>
+    <string name="msgChooseSubscription">Choose one of subscription plan to proceed further.</string>
+    <string name="titleSub">Subscribed!</string>
+    <string name="msgSubDone">Subscription activated Successfully, Enjoy!</string>
+    <string name="msgNewRequest">You might have a cancelled subscription. Submit a new subscription request.</string>
+</resources>

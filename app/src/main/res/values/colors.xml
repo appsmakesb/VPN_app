@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--    #1a2141 Map dots color for night -->
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimary500">#03A9F4</color>
+    <color name="colorPrimary700">#29B6F6</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorText">@color/colorWhite</color>
+    <color name="colorTextPrimary">@color/colorPrimary</color>
+    <color name="colorTitleText">#1C2534</color>
+    <color name="colorBackground">@color/colorWhite</color>
+    <color name="colorSecondaryText">#595B5E</color>
+    <color name="colorSnackBar">#FFEE58</color>
+    <color name="colorDarkText">#303030</color>
+    <color name="colorDarkBackground">#FFFFFF</color>
+    <color name="colorDark">#fff</color>
+    <!-- -->
+    <color name="colorStatsGray">#818181</color> <!-- 303030 0b0c1b 38C0F8 -->
+
+    <color name="colorTextStats">#FFFFFF</color>
+
+    <!-- Swipe down refresh animation color -->
+    <color name="orange">#F57C00</color>
+    <color name="green">#689F38</color>
+    <color name="blue">#039BE5</color>
+    <color name="red">#F4511E</color>
+    <color name="purple_500">#9013fe</color>
+    <!--    <color name="orange">#FF9900</color>-->
+    <!--    <color name="green">#009900</color>-->
+    <!--    <color name="blue">#0091EA</color>-->
+    <!--    <color name="red">#ff0015</color>-->
+    <color name="dark_blue">#0A81DF</color>
+    <color name="magenta">#9C27B0</color>
+
+    <color name="bg_light_green">#40009900</color>
+    <color name="bg_light_blue">#330A81DF</color>
+    <color name="bg_light_purple">#336200EE</color>
+    <color name="bg_light_red">#33FF0015</color>
+    <color name="bg_light_orange">#33FF9900</color>
+    <color name="bg_light_magenta">#339C27B0</color>
+
+    <color name="overlay_dark_50">#80000000</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <!--<color name="grey_80">#37474F</color>-->
+    <!-- Toggle Switch -->
+    <color name="gray">#444444</color>
+    <color name="gray_10" tools:ignore="MissingDefaultResource">#F0F0F0</color>
+
+
+    <color name="splashStart">#37F5F5</color>
+    <color name="splashEnd">#3B2CE7</color>
+
+    <color name="pink_300">#f06292</color>
+    <color name="pink_a_400">#f50057</color>
+
+    <color name="navGrayColor">#2D2D2D</color>
+    <color name="colorPrimaryDark">#252A34</color>
+    <color name="colorAccentDark">#315671</color>
+    <color name="darktext_color">#e5e5e5</color>
+    <color name="textColor2">#75ffffff</color>
+    <color name="white_10">#19ffffff</color>
+
+    <!--    <color name="cp_0">#30E3CA</color>-->
+    <color name="cp_0">@color/colorPrimary700</color>
+    <color name="cp_1">#FFA726</color>
+    <color name="cp_4">#a5dee5</color>
+    <color name="subtext">#8599A7</color>
+    <color name="maintextcolor">#ffffff</color>
+</resources>

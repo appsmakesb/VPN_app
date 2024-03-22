@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.VPNApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorBackground</item>
+        <item name="colorOnPrimary">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/poppins</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+<!--        <item name="android:actionBarDivider">@android:color/transparent</item>-->
+    </style>
+
+    <style name="selectedTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding12</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/textSize18</item>
+        <item name="background">@drawable/rounded_border_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="normalTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding12</item>
+        <item name="android:textSize">@dimen/textSize18</item>
+        <item name="android:textColor">@color/colorTitleText</item>
+        <item name="background">@drawable/rounded_border</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+</resources>

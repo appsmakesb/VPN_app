@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding10"
+    android:background="@drawable/rounded_border"
+    android:padding="@dimen/padding10">
+
+    <ImageView
+        android:id="@+id/imgCountry"
+        android:layout_width="@dimen/padding34"
+        android:layout_height="@dimen/padding34"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/flag_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:padding="@dimen/padding10"
+        android:text="@string/strUSA1"
+        android:textColor="@color/colorTitleText"
+        android:textSize="@dimen/textSize15"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/imgCountry"
+        app:layout_constraintStart_toEndOf="@id/imgCountry"
+        app:layout_constraintTop_toTopOf="@id/imgCountry" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutImageSelected"
+        android:layout_width="@dimen/padding40"
+        android:layout_height="@dimen/padding40"
+        android:background="@drawable/rounded_border_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgSelected"
+            android:layout_width="@dimen/padding40"
+            android:layout_height="@dimen/padding40"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_check"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorPrimary" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

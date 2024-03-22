@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimary500">#03A9F4</color>
+    <color name="colorPrimary700">#29B6F6</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorText">#BCFFFFFF</color>
+    <color name="colorTextPrimary">#BCFFFFFF</color>
+    <color name="colorTitleText">#BCFFFFFF</color>
+    <color name="colorBackground">#94000000</color>
+    <color name="colorSecondaryText">#9CFFFFFF</color>
+<!--    <color name="colorSnackBar">#000000</color>-->
+    <color name="colorDarkText">#FFFFFF</color>
+    <color name="colorDarkBackground">#303030</color>
+    <color name="grey_60">#E3E3E3</color>
+    <color name="colorDark">#303030</color>
+</resources>

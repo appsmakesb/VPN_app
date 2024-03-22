@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="SpUsage">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="@string/lblSettings"
+            app:titleTextColor="@color/colorWhite" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/fontRegularStyle"
+                android:text="@string/lblProfile" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/padding0"
+                app:cardElevation="@dimen/padding2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/padding5"
+                    android:paddingTop="@dimen/padding10"
+                    android:paddingEnd="@dimen/padding0"
+                    android:paddingBottom="@dimen/padding10">
+
+                    <LinearLayout
+                        android:id="@+id/layoutNotification"
+                        style="@style/settingLayout">
+
+                        <ImageButton
+                            style="@style/settingImage"
+                            android:background="@drawable/ic_bg_notification"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_s_notifications"
+                            app:tint="@color/green" />
+
+                        <TextView
+                            style="@style/fontLightSettingStyle"
+                            android:layout_marginEnd="@dimen/padding3"
+                            android:fontFamily="@font/poppins"
+                            android:text="@string/lblNotification" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/notificationOnOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_marginEnd="@dimen/padding10"
+                            android:checked="true"
+                            android:theme="@style/SCBSwitch" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutRTL"
+                        style="@style/settingLayout">
+
+                        <ImageButton
+                            style="@style/settingImage"
+                            android:background="@drawable/ic_bg_rtl"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_s_rtl"
+                            app:tint="@color/dark_blue" />
+
+                        <TextView
+                            style="@style/fontLightSettingStyle"
+                            android:layout_marginEnd="@dimen/padding3"
+                            android:fontFamily="@font/poppins"
+                            android:text="@string/lblRTL" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/rtlOnOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_marginEnd="@dimen/padding10"
+                            android:checked="false"
+                            android:theme="@style/SCBSwitch" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutDarkMode"
+                        style="@style/settingLayout">
+
+                        <ImageButton
+                            style="@style/settingImage"
+                            android:background="@drawable/ic_bg_change_password"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_s_darkmode"
+                            app:tint="@color/purple_500" />
+
+                        <TextView
+                            style="@style/fontLightSettingStyle"
+                            android:layout_marginEnd="@dimen/padding3"
+                            android:fontFamily="@font/poppins"
+                            android:text="@string/lblDarkMode" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/darkOnOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_marginEnd="@dimen/padding10"
+                            android:checked="false"
+                            android:theme="@style/SCBSwitch" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/fontRegularStyle"
+                android:text="@string/lblGeneral" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/padding0"
+                app:cardElevation="@dimen/padding2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/padding5"
+                    android:paddingTop="@dimen/padding10"
+                    android:paddingEnd="@dimen/padding0"
+                    android:paddingBottom="@dimen/padding10">
+
+                    <LinearLayout
+                        android:id="@+id/layoutRateApp"
+                        style="@style/settingLayout">
+
+                        <ImageButton
+                            style="@style/settingImage"
+                            android:background="@drawable/ic_bg_rate_app"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_s_favorite_white"
+                            app:tint="@color/red" />
+
+                        <TextView
+                            style="@style/fontLightSettingStyle"
+                            android:fontFamily="@font/poppins"
+                            android:text="@string/lblRateApp" />
+
+                        <ImageButton
+                            style="@style/settingImageGray"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutShare"
+                        style="@style/settingLayout">
+
+                        <ImageButton
+                            style="@style/settingImage"
+                            android:background="@drawable/ic_bg_rtl"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_s_share"
+                            app:tint="@color/dark_blue" />
+
+                        <TextView
+                            style="@style/fontLightSettingStyle"
+                            android:fontFamily="@font/poppins"
+                            android:text="@string/lblShareApp" />
+
+                        <ImageButton
+                            style="@style/settingImageGray"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutTerms"
+                        style="@style/settingLayout">
+
+                        <ImageView
+                            style="@style/settingImage"
+                            android:background="@drawable/ic_bg_about"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_s_about"
+                            app:tint="@color/magenta" />
+
+                        <TextView
+                            style="@style/fontLightSettingStyle"
+                            android:fontFamily="@font/poppins"
+                            android:text="@string/lblAbout" />
+
+                        <ImageButton
+                            style="@style/settingImageGray"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutPrivacyPolicy"
+                        style="@style/settingLayout">
+
+                        <ImageButton
+                            style="@style/settingImage"
+                            android:background="@drawable/ic_bg_privacy_policy"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_s_policy"
+                            app:tint="@color/orange" />
+
+                        <TextView
+                            style="@style/fontLightSettingStyle"
+                            android:fontFamily="@font/poppins"
+                            android:text="@string/lblPrivacyPolicy" />
+
+                        <ImageButton
+                            style="@style/settingImageGray"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="@dimen/padding0"
+                android:layout_height="@dimen/padding16" />
+
+            <TextView
+                android:id="@+id/txtSettingVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding16"
+                android:text="@string/lblSettingVersion" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

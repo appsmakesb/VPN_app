@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/padding34"
+    android:paddingStart="@dimen/padding16"
+    android:paddingEnd="@dimen/padding16">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="@dimen/padding0"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/lblDate"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textSize10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".34" />
+
+    <TextView
+        android:id="@+id/txtPing"
+        android:layout_width="@dimen/padding0"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/lblPing"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textSize10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtDate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".22" />
+
+    <TextView
+        android:id="@+id/txtDownload"
+        android:layout_width="@dimen/padding0"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/lblDownload"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textSize10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtPing"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".22" />
+
+    <TextView
+        android:id="@+id/txtUpload"
+        android:layout_width="@dimen/padding0"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/lblUpload"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textSize10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtDownload"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/padding10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/lblDate"
+            android:textColor="@color/darktext_color"
+            android:textSize="@dimen/textSize12"
+            app:layout_constraintEnd_toStartOf="@id/txtTimer"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".20" />
+
+        <TextView
+            android:id="@+id/txtSubdate"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/lblFormatDate"
+            android:textColor="@color/textColor2"
+            android:textSize="@dimen/textSize8"
+            app:layout_constraintEnd_toEndOf="@id/txtDate"
+            app:layout_constraintStart_toStartOf="@id/txtDate"
+            app:layout_constraintTop_toBottomOf="@id/txtDate" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/lblLocationSm"
+            android:textColor="@color/darktext_color"
+            android:textSize="@dimen/textSize12"
+            app:layout_constraintEnd_toStartOf="@id/txtTimer"
+            app:layout_constraintStart_toEndOf="@id/txtDate"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".20" />
+
+        <TextView
+            android:id="@+id/txtSubLocation"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/lblCountry"
+            android:textColor="@color/textColor2"
+            android:textSize="@dimen/textSize8"
+            app:layout_constraintEnd_toEndOf="@id/txtLocation"
+            app:layout_constraintStart_toStartOf="@id/txtLocation"
+            app:layout_constraintTop_toBottomOf="@id/txtLocation" />
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/lblTime"
+            android:textColor="@color/darktext_color"
+            android:textSize="@dimen/textSize12"
+            app:layout_constraintEnd_toStartOf="@id/txtDownload"
+            app:layout_constraintStart_toEndOf="@id/txtLocation"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".20" />
+
+        <TextView
+            android:id="@+id/txtSubPing"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/lblTimeFormat"
+            android:textColor="@color/textColor2"
+            android:textSize="@dimen/textSize8"
+            app:layout_constraintEnd_toEndOf="@id/txtTimer"
+            app:layout_constraintStart_toStartOf="@id/txtTimer"
+            app:layout_constraintTop_toBottomOf="@id/txtTimer" />
+
+        <TextView
+            android:id="@+id/txtDownload"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/lblDownload"
+            android:textColor="@color/darktext_color"
+            android:textSize="@dimen/textSize12"
+            app:layout_constraintEnd_toStartOf="@id/txtUpload"
+            app:layout_constraintStart_toEndOf="@id/txtTimer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".20" />
+
+        <TextView
+            android:id="@+id/txtSubDownload"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/lblMbps"
+            android:textColor="@color/textColor2"
+            android:textSize="@dimen/textSize8"
+            app:layout_constraintEnd_toEndOf="@id/txtDownload"
+            app:layout_constraintStart_toStartOf="@id/txtDownload"
+            app:layout_constraintTop_toBottomOf="@id/txtDownload" />
+
+        <TextView
+            android:id="@+id/txtUpload"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/lblUpload"
+            android:textColor="@color/darktext_color"
+            android:textSize="@dimen/textSize12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtDownload"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".20" />
+
+        <TextView
+            android:id="@+id/txtSubUpload"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/lblMbps"
+            android:textColor="@color/textColor2"
+            android:textSize="@dimen/textSize8"
+            app:layout_constraintEnd_toEndOf="@id/txtUpload"
+            app:layout_constraintStart_toStartOf="@id/txtUpload"
+            app:layout_constraintTop_toBottomOf="@id/txtUpload" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding0"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutTitleBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

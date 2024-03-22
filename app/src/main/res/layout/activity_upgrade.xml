@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="@string/lblUpgradeToVIP"
+            app:titleTextColor="@color/colorWhite" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding0"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpgrade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding240"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/upgrade" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding16"
+                android:layout_marginTop="@dimen/padding16"
+                android:layout_marginEnd="@dimen/padding16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/animationView" />
+
+
+            <TextView
+                android:id="@+id/lblVIPFeatures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding10"
+                android:gravity="start"
+                android:text="@string/lblVIPFeatureTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTitleText"
+                android:textSize="@dimen/textSize15"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/recyclerViewSub"
+                app:layout_constraintTop_toBottomOf="@id/recyclerViewSub" />
+
+            <TextView
+                android:id="@+id/txtVIPFeatures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding16"
+                android:fontFamily="@font/poppins"
+                android:gravity="start"
+                android:text="@string/lblVIPFeatures"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTitleText"
+                android:textSize="@dimen/textSize15"
+                app:layout_constraintStart_toStartOf="@id/lblVIPFeatures"
+                app:layout_constraintTop_toBottomOf="@id/lblVIPFeatures" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btnUpgrade"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding48"
+        android:layout_marginStart="@dimen/padding16"
+        android:layout_marginTop="@dimen/padding5"
+        android:layout_marginEnd="@dimen/padding16"
+        android:layout_marginBottom="@dimen/padding5"
+        android:background="@drawable/bf_btn_round_primary_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/lblUpgradeToVIP"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textSize16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

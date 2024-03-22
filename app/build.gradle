@@ -1,0 +1,129 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk _compileSdk
+
+    defaultConfig {
+        applicationId System.getenv("PKG_NAME")
+        minSdk _minSdk
+        targetSdk _targetSdk
+        versionCode Integer.parseInt(System.getenv("VERSION_CODE_HEADER"))
+        versionName System.getenv("VERSION_NAME_HEADER")
+        configurations.all {
+            resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
+        }
+        resValue("string", "APP_LABEL", "\"${System.getenv("APP_LABEL")}\"")
+        resValue("string", "PKG_NAME", "\"${System.getenv("PKG_NAME")}\"")
+        //Admin Panel URL & Key
+        resValue 'string', "api_url", "\"${System.getenv("WEB_URL")}\""
+        resValue 'string', "api_key", "bbydRmaPTr08BSCHsGxV1jIKp5uLzEbXWMi34JvAolFZwqD"
+
+        resValue 'string', "onemonth", "onemonth"   //Place your 1 month subscription id
+        resValue 'string', "quarter", "quarter"     //Place your 3 month subscription id
+        resValue 'string', "halfyear", "halfyear"   //Place your 6 month subscription id
+        resValue 'string', "oneyear", "oneyear"     //Place your 12 month subscription id
+
+        resValue 'string', 'lblMonthly', 'Monthly'          //P1M
+        resValue 'string', 'lblQuarterly', 'Quarterly'      //P3M
+        resValue 'string', 'lblHalfYearly', 'Half Yearly'   //P6M
+        resValue 'string', 'lblYearly', 'Yearly'            //P1Y
+        //If modified in this file, must clean & build the project for best result before run into device
+    }
+
+    signingConfigs {
+        create("release") {
+            def keystoreProperties = new Properties()
+            def keystorePropertiesFile = rootProject.file("keystore.properties")
+
+            if (keystorePropertiesFile.exists()) {
+                keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+            }
+            storeFile = file(keystoreProperties.getProperty("storeFile"))
+            storePassword = keystoreProperties.getProperty("storePassword")
+            keyAlias = keystoreProperties.getProperty("keyAlias")
+            keyPassword = keystoreProperties.getProperty("keyPassword")
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig = signingConfigs.getByName("release")
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+    bundle {
+        abi {
+            enableSplit = false
+        }
+    }
+}
+dependencies {
+    //noinspection GradleDependency
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation "me.relex:circleindicator:2.1.6"
+    // animation
+    implementation 'com.airbnb.android:lottie:4.1.0'
+    //for circular profile picture
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation project(':nativetemplates')
+    // adding Admob SDK
+    implementation 'com.google.android.gms:play-services-ads:21.3.0'
+
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    // Material Design Library
+    implementation files('libs/achartengine-1.2.0.jar')
+    implementation 'com.github.PhilJay:MPAndroidChart:3.0.3'
+    implementation "androidx.core:core-ktx:1.8.0"
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.1.0'
+    implementation 'androidx.work:work-runtime:2.7.1'
+    // App Intro
+    implementation 'com.github.AppIntro:AppIntro:6.1.0'
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    // Networking
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.0'
+
+    implementation platform('com.google.firebase:firebase-bom:30.4.1')
+    implementation 'com.google.firebase:firebase-core'
+    implementation 'com.google.firebase:firebase-messaging'
+
+    // Material Navigation View Library
+    implementation 'com.shreyaspatil:MaterialNavigationView:1.2'
+
+    def billing_version = "5.0.0"
+    implementation "com.android.billingclient:billing:$billing_version"
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+    implementation 'com.google.guava:guava:24.1-jre'
+
+    implementation 'com.android.ndk.thirdparty:openssl:1.1.1l-beta-1'
+
+    implementation 'androidx.work:work-runtime:2.7.1'
+}

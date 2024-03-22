@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutUploadDownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding16"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="@dimen/padding0"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding16"
+                android:layout_weight="1">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/imgDownload"
+                    android:layout_width="@dimen/padding40"
+                    android:layout_height="@dimen/padding40"
+                    android:layout_centerVertical="true"
+                    app:lottie_autoPlay="false"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/speed_download" />
+
+                <TextView
+                    android:id="@+id/txtDownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgDownload"
+                    android:gravity="start"
+                    android:text="@string/lblDownload"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/textSize10" />
+
+                <TextView
+                    android:id="@+id/txtDownloadSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDownload"
+                    android:layout_toEndOf="@id/imgDownload"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/lblStaticSpeed"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/textSize18" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/padding0"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding16"
+                android:layout_weight="1">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/imgUpload"
+                    android:layout_width="@dimen/padding40"
+                    android:layout_height="@dimen/padding40"
+                    android:layout_centerVertical="true"
+                    app:lottie_autoPlay="false"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/speed_up" />
+
+                <TextView
+                    android:id="@+id/txtUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgUpload"
+                    android:gravity="start"
+                    android:text="@string/lblUpload"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/textSize10" />
+
+                <TextView
+                    android:id="@+id/txtUploadSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtUpload"
+                    android:layout_toEndOf="@id/imgUpload"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/lblStaticSpeed"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/textSize18" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutServers"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="@dimen/padding10"
+            android:background="@drawable/rounded_border"
+            android:paddingStart="@dimen/padding16"
+            android:paddingEnd="@dimen/padding10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutUploadDownload">
+
+            <ImageView
+                android:id="@+id/imgCountryFlag"
+                android:layout_width="@dimen/padding30"
+                android:layout_height="@dimen/padding30"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/flag_in"
+                app:layout_constraintBottom_toBottomOf="@id/layoutServers"
+                app:layout_constraintStart_toStartOf="@id/layoutServers"
+                app:layout_constraintTop_toTopOf="@id/layoutServers" />
+
+            <TextView
+                android:id="@+id/txtCountryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/strUSA1"
+                android:textColor="@color/colorTitleText"
+                android:textSize="@dimen/textSize15"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@id/layoutServers"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgGo"
+                android:layout_width="@dimen/padding35"
+                android:layout_height="@dimen/padding35"
+                android:layout_marginStart="@dimen/padding40"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/padding5"
+                android:src="@drawable/ic_go"
+                app:layout_constraintBottom_toBottomOf="@id/layoutServers"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtCountryName"
+                app:layout_constraintTop_toTopOf="@id/layoutServers" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding2"
+            android:fontFamily="@font/poppins"
+            android:gravity="start|center"
+            android:lines="2"
+            android:text="@string/msgTapStart"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/textSize16"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutServers" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutImage"
+            android:layout_width="@dimen/padding200"
+            android:layout_height="@dimen/padding200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtStatus">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="@dimen/padding185"
+                android:layout_height="@dimen/padding185"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/vpn_circle" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/imgConnect"
+                android:layout_width="@dimen/padding170"
+                android:layout_height="@dimen/padding170"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/vpn_start"
+                app:lottie_repeatCount="1" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/imgDisconnect"
+                android:layout_width="@dimen/padding170"
+                android:layout_height="@dimen/padding170"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/vpn_stop" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutImage">
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="start"
+                android:text="@string/lblStaticTime"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTitleText"
+                android:textSize="@dimen/textSize18"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtTimeInvisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="start"
+                android:text="@string/lblStaticTime"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTitleText"
+                android:textSize="@dimen/textSize18"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/imgTime"
+                android:layout_width="@dimen/padding24"
+                android:layout_height="@dimen/padding24"
+                android:layout_marginStart="@dimen/padding10"
+                android:layout_marginEnd="@dimen/padding10"
+                app:layout_constraintStart_toEndOf="@id/txtTimeInvisible"
+                app:layout_constraintTop_toTopOf="@id/txtTimeInvisible"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/vpn_clock" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/templateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding16"
+            android:visibility="gone"
+            app:gnt_template_type="@layout/gnt_medium_template_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutStatus" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

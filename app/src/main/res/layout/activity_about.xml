@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:ignore="SpUsage">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="@string/lblAbout"
+            app:titleTextColor="@color/colorWhite" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adsBottomView"
+        android:layout_below="@+id/appbar">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding10"
+                    app:cardCornerRadius="@dimen/padding5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/padding16"
+                        android:paddingTop="@dimen/padding4"
+                        android:paddingEnd="@dimen/padding16"
+                        android:paddingBottom="@dimen/padding4"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/imgAppLogo"
+                            android:layout_width="@dimen/padding50"
+                            android:layout_height="@dimen/padding50"
+                            android:contentDescription="@string/app_name"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/txtAppName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/padding10"
+                            android:layout_marginEnd="@dimen/padding10"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="start"
+                            android:text="@string/app_name"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorDarkText"
+                            android:textSize="@dimen/textSize18" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/aboutCardView"
+                    app:cardCornerRadius="@dimen/padding5">
+
+                    <LinearLayout style="@style/aboutLinearClick">
+
+                        <ImageView
+                            style="@style/aboutImageView"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_s_about" />
+
+                        <View style="@style/verticalLine" />
+
+                        <LinearLayout style="@style/aboutLinearSimple">
+
+                            <TextView
+                                style="@style/fontMediumAboutStyle"
+                                android:text="@string/lblVersions" />
+
+                            <TextView
+                                android:id="@+id/txtVersion"
+                                style="@style/fontLightAboutStyle"
+                                android:text="@string/lblVersion" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/aboutCardView"
+                    app:cardCornerRadius="@dimen/padding5">
+
+                    <LinearLayout style="@style/aboutLinearClick">
+
+                        <ImageView
+                            style="@style/aboutImageView"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_a_user" />
+
+                        <View style="@style/verticalLine" />
+
+                        <LinearLayout style="@style/aboutLinearSimple">
+
+                            <TextView
+                                style="@style/fontMediumAboutStyle"
+                                android:text="@string/lblCompany" />
+
+                            <TextView
+                                android:id="@+id/txtCompany"
+                                style="@style/fontLightAboutStyle"
+                                android:text="@string/lblCompany" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/aboutCardView"
+                    app:cardCornerRadius="@dimen/padding5">
+
+                    <LinearLayout style="@style/aboutLinearClick">
+
+                        <ImageView
+                            style="@style/aboutImageView"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_a_email" />
+
+                        <View style="@style/verticalLine" />
+
+                        <LinearLayout style="@style/aboutLinearSimple">
+
+                            <TextView
+                                style="@style/fontMediumAboutStyle"
+                                android:text="@string/lblEmail" />
+
+                            <TextView
+                                android:id="@+id/txtEmail"
+                                style="@style/fontLightAboutStyle"
+                                android:text="@string/lblEmail" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/aboutCardView"
+                    app:cardCornerRadius="@dimen/padding5">
+
+                    <LinearLayout style="@style/aboutLinearClick">
+
+                        <ImageView
+                            style="@style/aboutImageView"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_a_privacy_policy" />
+
+                        <View style="@style/verticalLine" />
+
+                        <LinearLayout style="@style/aboutLinearSimple">
+
+                            <TextView
+                                style="@style/fontMediumAboutStyle"
+                                android:text="@string/lblWebsite" />
+
+                            <TextView
+                                android:id="@+id/txtWebsite"
+                                style="@style/fontLightAboutStyle"
+                                android:text="@string/lblWebsite" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/aboutCardView"
+                    app:cardCornerRadius="@dimen/padding5">
+
+                    <LinearLayout style="@style/aboutLinearClick">
+
+                        <ImageView
+                            style="@style/aboutImageView"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_a_call" />
+
+                        <View style="@style/verticalLine" />
+
+                        <LinearLayout style="@style/aboutLinearSimple">
+
+                            <TextView
+                                style="@style/fontMediumAboutStyle"
+                                android:text="@string/lblContact" />
+
+                            <TextView
+                                android:id="@+id/txtContact"
+                                style="@style/fontLightAboutStyle"
+                                android:text="@string/lblContact" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/aboutCardView"
+                    app:cardCornerRadius="@dimen/padding5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/padding5"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="@string/lblAbout"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorDarkText" />
+
+                        <WebView
+                            android:id="@+id/webView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/padding8" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                <View-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="?attr/actionBarSize" />-->
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/adsBottomView"
+        style="@style/adsBottomStyle" />
+
+</RelativeLayout>
