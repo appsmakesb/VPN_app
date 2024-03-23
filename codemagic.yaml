@@ -8,6 +8,8 @@ workflows:
             gradle: 8.0
             JAVA_HOME: "/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home"
         scripts:
+            - chmod +x $FCI_BUILD_DIR/json_downloader.sh
+            - $FCI_BUILD_DIR/json_downloader.sh $JSON_URL
             - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
             - brew install imagemagick
             - chmod +x $FCI_BUILD_DIR/launcher_icon.sh
