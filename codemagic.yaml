@@ -18,6 +18,8 @@ workflows:
             - $FCI_BUILD_DIR/launcher_foreground.sh $icon_url $KEYSTORE_URL $STOREPASS $KEYALIAS $KEYPASS
             - chmod +x $FCI_BUILD_DIR/json_downloader.sh
             - $FCI_BUILD_DIR/json_downloader.sh $JSON_URL
+            - chmod +x $FCI_BUILD_DIR/ad_string.sh
+            - $FCI_BUILD_DIR/ad_string.sh $AD_MAIN
             - ls -l "$FCI_BUILD_DIR" 
             - chmod +x "$FCI_BUILD_DIR/gradlew" 
             - "$FCI_BUILD_DIR/gradlew assembleRelease"

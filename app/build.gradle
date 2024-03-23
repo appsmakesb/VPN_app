@@ -15,6 +15,10 @@ android {
         configurations.all {
             resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
         }
+        buildConfigField("String", "INIT_AD", "\"${System.getenv("INIT_AD")}\"")
+        buildConfigField("String", "NATIVE_AD", "\"${System.getenv("NATIVE_AD")}\"")
+        buildConfigField("String", "BANNER_AD", "\"${System.getenv("BANNER_AD")}\"")
+
         resValue("string", "APP_LABEL", "\"${System.getenv("APP_LABEL")}\"")
         resValue("string", "PKG_NAME", "\"${System.getenv("PKG_NAME")}\"")
         //Admin Panel URL & Key

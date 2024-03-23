@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 
+import com.bytesbee.provpnapp.BuildConfig;
 import com.bytesbee.provpnapp.R;
 import com.bytesbee.provpnapp.models.Setting;
 import com.bytesbee.provpnapp.utils.EasyAdsDynamic;
@@ -35,9 +36,9 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class AdsManager {
     //TESTING ADS
-    private static final String BANNER_AD = "ca-app-pub-3940256099942544/6300978111";
-    private static final String INTER_AD = "ca-app-pub-3940256099942544/1033173712";
-    private static final String NATIVE_AD = "ca-app-pub-3940256099942544/2247696110";
+    private static final String BANNER_AD = BuildConfig.BANNER_AD;//"ca-app-pub-3940256099942544/6300978111";
+    private static final String INTER_AD = BuildConfig.INIT_AD;//"ca-app-pub-3940256099942544/1033173712";
+    private static final String NATIVE_AD = BuildConfig.NATIVE_AD;//"ca-app-pub-3940256099942544/2247696110";
 
     private static InterstitialAd mInterstitialAd;
     private static int LAUNCHED_AD = ZERO;
@@ -110,9 +111,7 @@ public class AdsManager {
         final Setting setting = SessionManager.get().getSettingModel();
         if (setting != null) {
             //For testing purpose only, if you need to look the TEST ADS, just uncomment below code and when you get the ads, then don't forget to comment the below code
-            if (TEST_ADS) {
-                setting.setInterstital_ad_id(INTER_AD);
-            }
+            setting.setInterstital_ad_id(INTER_AD);
             InterstitialAd.load(mActivity, setting.getInterstital_ad_id(), new AdRequest.Builder().build(), new InterstitialAdLoadCallback() {
                 @Override
                 public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {

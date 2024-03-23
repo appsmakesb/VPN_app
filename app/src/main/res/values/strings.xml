@@ -5,7 +5,6 @@
     <string name="lblWelcome">You\'re welcome to my app</string>
 
     <string name="lblNotifcationTitle">BytesBee - %s</string>
-    <string name="main_ad_app_id">ca-app-pub-8676187581068146~3154011298</string>
     <!-- OnBoarding -->
     <string name="sliderTitle1">Browse Faster Internet</string>
     <string name="sliderTitle2">Free and VIP Servers</string>
@@ -149,4 +148,3 @@
     <string name="titleSub">Subscribed!</string>
     <string name="msgSubDone">Subscription activated Successfully, Enjoy!</string>
     <string name="msgNewRequest">You might have a cancelled subscription. Submit a new subscription request.</string>
-</resources>
