@@ -14,7 +14,7 @@ string_value="$1"
 string_resource="<string name=\"main_ad_app_id\">$string_value</string></resources>"
 
 # Path to strings.xml file
-strings_xml="app/src/main/res/values/strings.xml"
+strings_xml="$script_dir/app/src/main/res/values/strings.xml"
 
 # Check if strings.xml exists
 if [ ! -f "$strings_xml" ]; then
