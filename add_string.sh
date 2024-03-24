@@ -31,4 +31,4 @@ fi
 # Add the string resource to strings.xml
 echo "$string_resource" >> "$strings_xml"
 
-echo "String resource 'main_ad_app_id' successfully added to strings.xml."
+echo "String resource 'main_ad_app_id $1' successfully added to strings.xml."
